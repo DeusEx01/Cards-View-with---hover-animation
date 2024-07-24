@@ -1,0 +1,316 @@
+.cardsMD thead {
+  display: none;
+}
+.cm-html-embed table,.markdown-rendered table {
+  margin: 0 auto !important;
+}
+.cardsMD tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cardsMD tbody > tr {
+  display: flex;
+  flex-direction: column;
+
+  width: 220px;
+  border-radius: 15px !important;
+
+  margin: 10px;
+
+
+}
+
+.cardsMD tbody > tr > td:not(tbody > tr > td:first-child, tbody > tr > td:nth-child(2)) {
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  height: 55px;
+
+
+}
+.cardsMD tbody > tr > td {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*-------------------------------*/
+.cardsMD tbody > tr > td span.title a{
+  display: -webkit-box !important;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+  text-decoration: none !important;
+  text-align: center;
+  font-size: 17px !important;
+  color: white !important;
+  font-weight: bolder !important;
+  line-height: 1.4;
+}
+
+.cardsMD tbody > tr > td span.title a::before {
+  content: "";
+  display: block;
+  background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  width: 100%;
+  height: 2px;
+  animation: rotate 3s infinite linear;
+
+
+}
+.cardsMD tbody > tr > td span.title a::after {
+  content: "";
+  display: block;
+  background: linear-gradient(to right, #30ff90 0%, #ed2ded 25%, #c99826 50%, #30ffe6 75%, #30ff90 100%);
+  width: 100%;
+  height: 2px;
+  animation: rotate 3s infinite linear;
+
+
+}
+
+@keyframes rotate {
+  from {
+    background-position: -400px;
+  }
+  to { 
+    background-position: 0px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------*/
+.cardsMD tbody > tr > td:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 15px;
+  padding: 0;
+  height: 300px;
+}
+
+.cardsMD tbody > tr > td:nth-child(2) {
+  height: 50px !important;
+  text-align: center;
+  font-size: 16px;
+}
+
+.cardsmd tbody > tr > td > ul {
+  list-style: none;
+  display: flex;
+}
+.cardsMD tbody > tr > td > span:has(img) {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cardsMD tbody > tr > td > span img {
+  height: 100%;
+  width: 100%;
+  cursor: zoom-in;
+  object-fit: cover;
+}
+
+.cardsMD tbody > tr > td:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.cardsMD .markdown-preview-view progress, .markdown-rendered progress, .markdown-source-view.is-live-preview progress {
+  height: 15px;
+}
+
+.cardsMD input[type='text'], .cardsMD input[type='search'], .cardsMD input[type='email'], .cardsMD input[type='password'], .cardsMD input[type='number'] {
+  text-align: center;
+  border: none;
+  background: none;
+  font-size: 15px;
+  padding: 2px;
+}
+
+/* --Support Styles-- */
+.cardsMD span .property {
+  font-size: 12px;
+  display: block;
+}
+.container {
+  display: block;
+}
+
+/* body {
+  --file-line-width: 100%;
+} */
+/*-- TEST -- */
+
+/* .cardsMD tbody > tr > td:nth-child(2),.cardsMD tbody > tr > td:nth-child(3) {
+  display: none;
+}
+.cardsMD tbody > tr {
+  position: relative;
+}
+.cardsMD tbody > tr > td:first-child:hover {
+  border-color: red;
+  filter: blur(4px);
+}
+.cardsMD tbody > tr > td:first-child:hover + td:nth-child(2) {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border: 1px solid red;
+}
+td:nth-child(2):hover {
+  display: block;
+} */
+
+/* .cardsMD tbody > tr > td:has(.container){
+  display: none;
+} */
+
+/* .cardsMD tbody > tr td:last-child {
+  opacity: 0;
+}
+
+.cardsMD tbody > tr td:first-child:hover .cardsMD tbody > tr td:last-child {
+  opacity: 1;
+} */
+
+
+
+/* quick reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-family: helvetica, arial, sans-serif;
+}
+
+/* relevant styles */
+.cardsMD tbody > tr > td img {
+  height: 100% !important;
+}
+
+
+
+.img__wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.img__wrap img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: hsla(274, 76%, 47%, 0.3);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px !important;
+  padding: 10px 15px;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+.img__description_layer span:has(.property) {
+  border-bottom: 1px solid red;
+}
+.img__description_layer span .property {
+  font-size: 18px !important;
+  display: block !important;
+  
+}
+.cardsMD span .property {
+  text-align: center;
+}
+.cardsMD span .property_value {
+  font-size: 15px;
+  font-weight: bold;
+}
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+.img__wrap:hover .img__img{
+  filter: blur(6px);
+  width: 100%;
+  height: 100%;
+}
+
+.img__wrap .img__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+  width: 95%;
+  font-size: 12px;
+  text-align: center;
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
+}
+
