@@ -1,4 +1,4 @@
-````
+````html
 ```dataviewjs
 const table = dv.markdownTable(
   ["Cover"],
