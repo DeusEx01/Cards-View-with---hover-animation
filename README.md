@@ -1,7 +1,7 @@
 1. [ABOUT](#About)
-2. [span](#Showcase)
-3. [span](#Installation)
-4. [span](#Usage)
+2. [Showcase](#Showcase)
+3. [Installation](#Installation)
+4. [Usage](#Usage)
 
 # About
 > In development
