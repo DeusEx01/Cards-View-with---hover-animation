@@ -1,4 +1,3 @@
-````html
 ```dataviewjs
 const table = dv.markdownTable(
   ["Cover"],
@@ -27,4 +26,3 @@ const table = dv.markdownTable(
 );
 dv.el("div", table, { cls: "cardsMD" });
 ```
-````
