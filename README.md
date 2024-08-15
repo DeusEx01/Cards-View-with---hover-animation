@@ -5,7 +5,7 @@
 
 # About
 > [!CAUTION]
-> In development.
+> Abandoned.
 
 This is a snippet for Cards view from **Dataview tables**.
 Most appropriate way of using is creating libraries of books, movies, series and so on.
